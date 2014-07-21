@@ -1,0 +1,15 @@
+Pull down changes from repo:
+
+hg pull
+
+Merge if necessary: 
+
+hg merge
+
+Make edits and commit:
+
+hg commit -m 'comment goes here' -u kweiss
+
+Push changes to repo
+
+hg push https://kweiss@hg.cdlib.org/was-puppet
