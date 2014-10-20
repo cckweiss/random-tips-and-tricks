@@ -1,0 +1,8 @@
+To determine all open files in a directory:
+
+lsof +fg *
+
+
+To determine what PID is holding a port open:
+
+lsof -i :[port number]
