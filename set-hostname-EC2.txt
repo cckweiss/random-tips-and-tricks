@@ -1,0 +1,20 @@
+1. Launch basic AWS instance
+
+2. Set up Elastic IP address
+
+3. Request DNS alias for that Elastic IP
+
+4. Change /etc/hosts, /etc/sysconfig/network, and /etc/hostname (for RedHat) to the CNAME
+	hostname:
+		uc3-puppet.cdlib.org
+		
+	hosts:
+		127.0.0.1   uc3-puppet.cdlib.org uc3-puppet localhost localhost.localdomain localhost4 localhost4.localdomain4
+		
+	network:
+		HOSTNAME=uc3-puppet.cdlib.org
+		
+5. RedHat: Comment out set_hostname and update_hostname in /etc/cloud/cloud.cfg
+	https://forums.aws.amazon.com/message.jspa?messageID=560446
+	
+6. Reboot and confirm that the new hostname is applied
