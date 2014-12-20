@@ -18,3 +18,15 @@
 	https://forums.aws.amazon.com/message.jspa?messageID=560446
 	
 6. Reboot and confirm that the new hostname is applied
+
+
+
+Set up a puppet managed node
+
+1. Launch the node
+
+2. Reset the DNS
+
+3. Fix firewall rules on Puppet Master
+
+4. curl -k https://uc3-puppet.cdlib.org:8140/packages/current/install.bash | sudo bash
